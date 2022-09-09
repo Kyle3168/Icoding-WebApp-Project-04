@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Queries-Project</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css" />
+    <!-- <link rel="stylesheet" href="">      global.css  -->
+
+<style>
+
+    body,
+    html,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font: 14px/1.5 'MicrosoftYaHei';
+        color: #000;
+        background-color: #f3f5f9;
+    }
+
+
+    .footer {
+        height: 50px;
+        background-color: #333;    
+        position: relative;
+        z-index: 22;
+    }
+
+
+
+
+    /* header start */
+
+    
+    .header {
+        height: 115px;
+        padding: 20px;
+        width: 100%;
+        background-color: #f3f5f9;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 222;
+    }
+
+    .header-content {
+        height: 75px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .header .header-content {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .header .header-content a.logo {
+        margin: 0 22px 0 32px;
+    }
+
+    .header .header-content ul {
+        
+        flex-wrap: wrap;
+        position: absolute;
+        left: 120px;
+        
+    }
+
+    .header .header-content ul li a {
+        display: block;
+        color: #000;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 10px;
+        
+    }
+
+    .header .header-content ul li a:hover {
+        background-color: #efe8ff;
+        color: #9c71fc;
+    }
+
+
+    .header .header-content .icon-nav {
+        width: 26px;
+        height: 26px;
+    }
+
+    .header .header-content span.icon-fenlei {
+        
+        width: 100%;
+        margin-left: -15px;
+    }
+
+
+    /* end header */
+
+
+
+
+
+
+    /* menu start */
+
+    .menu {
+        width: 260px;
+        position: fixed;
+        top: 115px;
+        left: 20px;
+        bottom: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .menu .menu-item {
+        height: 40px;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    /* .menu .menu-item:hover {
+        height: 250px;
+    } */
+
+
+    .menu .menu-item .menu-item-title {
+        width: 220px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        color: #5b5b5b;
+        font-size: 16px;
+        background: url(../images/right-arrow.png) no-repeat right;
+        background-size: 15px;
+        
+        
+    }
+
+    .menu .menu-item .menu-item-title .icon-menu {
+        font-size: 18px;
+        margin-left: 7px;
+        margin-right: 12px;
+    }
+
+
+    .menu .menu-item .menu-item-active {
+        background-color: #f77088;
+        color: #fff;
+ 
+    }
+
+    .menu .menu-item ul {
+        padding-top: 11px;
+    }
+
+    .menu .menu-item ul li {
+        height: 39px;
+        line-height: 39px;
+        background: url(../images/icons8-0-degrees-50.png) no-repeat 13px center;
+        background-size: 10px;
+        align-items: center;
+        
+    }
+
+    .menu .menu-item ul li a {
+        display: block;
+        padding-left: 40px;
+        color: #000;
+
+    }
+
+    /* end menu */
+
+
+
+
+    /* main start */
+        .main {
+        margin: 115px 10px 20px 290px;
+        /* height: 1000px; */
+        /* background-color: tomato; */
+        border-radius: 10px;
+    }
+
+
+    .main-row {
+        display: flex;
+        
+    }
+
+
+    .main-row .col {
+        /* border: 1px solid #000; */
+        min-height: 200px;
+        padding: 10px;
+    }
+
+    .main-row .col-gap {
+        padding-top: 0;
+    }
+
+    .main .main-row .col .col-content {
+        display: flex;
+        background-color: #fff;
+        height: 100%;
+        border-radius: 10px;
+        position: relative;
+        
+    }
+
+   
+
+  
+    .main .main-row .col .col-content .col-content-box span.col-content-item {
+        font-size: 20px;
+        color: #5b5b5b;
+    }
+
+  
+    .main .main-row .col .col-content .col-content-box p i {
+        font-style: normal;
+        
+    
+    }
+
+    .main .main-row .col .col-content .col-content-box {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.main .main-row .col .col-content .col-content-box p .number {
+    font-size: 30px;
+    padding-left: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+    .main .main-row .col .col-content .col-content-box a {
+        color: #9c71fc;
+        height: 100px;
+    }
+
+    .main .main-row .col .col-content .hot-class {
+        width: 100%;
+        height: 100%;
+        margin-left: 20px;
+        
+    }
+
+    .main .main-row .col .col-content .hot-class h3 {
+        color:#a7a7a7
+    }
+
+
+    .col-content .hot-class ul li {
+        margin-bottom: 15px;
+    }
+
+
+    .col-content .hot-class ul li .hot-class-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #9c71fc;
+        border-radius: 5px;
+        opacity: 0.5;
+        position: relative;
+    }
+
+
+    .col-content .hot-class ul li .hot-class-desc {
+        position: absolute;
+        left: 100px;
+        top: 65px;
+        color: #000;
+       
+    }
+
+    .col-content .hot-class ul li p {
+        margin-top: 0px;
+        font-size: 14px;
+        color: rgb(151, 151, 151);
+    }
+
+
+    /* end main */
+
+
+</style>
+<link rel="stylesheet" href="../css/media-queries.css" />
+
+<script src="../js/echarts.js"></script>
+
+</head>
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="header-content">
+            <a href="" class="logo"><img src="../images/logo-small-removebg-preview.png" alt="" width="80px" height="80px"></a>
+            <span class="icon-nav xxlg-hide sm-show iconfont icon-fenlei" id="J_nav"></span>
+            
+            <ul class="xxlg-flex sm-hide " id="J_nav_list">
+                <li><a href="">概况</a></li>
+                <li><a href="">教务</a></li>
+                <li><a href="">营销</a></li>
+                <li><a href="">运营</a></li>
+                <li><a href="">用户</a></li>
+                <li><a href="">交易</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- menu start -->
+    <nav class="menu" id="J_menu">
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-jiaoxuepingjia"></span>
+                教学管理
+            </div>
+            
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-kechengguanli"></span>
+                课程管理
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-banji"></span>
+            班级管理
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-yonghuguanli"></span>
+                用户管理
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-dingdan"></span>
+                订单管理
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-fapiao"></span>
+                数据管理
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-daichuli"></span>
+                运营
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-title">
+                <span class="icon-menu iconfont icon-tubiao_qudao"></span>
+                渠道管理
+            </div>
+            <ul>
+                <li><a href="">班级管理</a></li>
+                <li><a href="">直播管理</a></li>
+                <li><a href="">课程管理</a></li>
+                <li><a href="">题库管理</a></li>
+                <li><a href="">分类标签</a></li>
+            </ul>
+        </div>
+        <button id="button" class="xxlg-hide xlg--show">&#x2192</button>
+    </nav>
+    <!-- end menu -->
+
+
+    <!-- main start -->
+    <main class="main">
+        <div class="main-row ">
+            <div class="col col-gap col-xxlg-3 col-lg-6 col-sm-12">
+                <div class="col-content">
+
+                        <div class="col-content-box">
+                            <span class="col-content-item">最新学员</span>
+                            <p>
+                                <i class="item-title">最后一周数据</i>
+                                <i class="number">668</i>
+                            </p>
+                            <a href="">查看详情</a>
+                        </div>
+               
+                </div>
+            </div>
+            <div class="col col-gap col-sm-gap col-xxlg-3 col-lg-6 col-sm-12">
+                <div class="col-content">
+                    <div class="col-content-box">
+                        <span class="col-content-item">订单</span>
+                        <p>
+                            <i class="item-title">未支付订单</i>
+                            <i class="number">12</i>
+                        </p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-gap col-gap2 col-xxlg-3 col-lg-6 col-sm-12">
+                <div class="col-content">
+                    <div class="col-content-box">
+                        <span class="col-content-item">当月利润</span>
+                        <p>
+                            <i class="item-title">截至昨天</i>
+                            <i class="number">66568</i>
+                        </p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-gap col-gap2 col-xxlg-3 col-lg-6 col-sm-12">
+                <div class="col-content">
+                    <div class="col-content-box">
+                        <span class="col-content-item">快到期学员</span>
+                        <p>
+                            <i class="item-title">最后一周数据</i>
+                            <i class="number">868</i>
+                        </p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-row row">
+            <div class="col col-xxlg-8 col-md-12 ">
+                <div class="col-content"></div>
+            </div>
+            <div class="col col-xxlg-4 col-md-12">
+                <div class="col-content">
+
+                    <!-- <div class="hot-class iconfont ">
+                        <h3>热门课程</h3>
+                    
+                        <ul>
+                            <li>
+                                <a href="" >
+                                    <div class="hot-class-icon icon-css"></div> 
+                                <div class="hot-class-desc">
+                                    CSS 6大主流布局技术
+                                    <p>报名人数: 1266</p>
+                                </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" >
+                                    <div class="hot-class-icon icon-js"></div> 
+                                <div class="hot-class-desc">
+                                    CSS 6大主流布局技术
+                                    <p>报名人数: 1266</p>
+                                </div>
+                                </a>
+                            </li>
+
+
+
+                        </ul> -->
+                
+
+
+
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="main-row row">
+            <div class="col col-xxlg-4 col-sm-12 ">
+                <div class="col-content"></div>
+            </div>
+            <div class="col col-xxlg-8 col-sm-12">
+                <div class="col-content"></div>
+            </div>
+           
+        </div>
+
+        <div class="main-row row">
+            <div class="col col-xxlg-4 col-md-6 col-sm-12">
+                <div class="col-content"></div>
+            </div>
+            <div class="col col-xxlg-4 col-md-6 col-sm-12" id="J_chart1">
+                <div class="col-content"></div>
+            </div>
+            <div class="col col-xxlg-4 col-md-12 col-sm-12" id="J_chart2">
+                <div class="col-content"></div>
+            </div>
+           
+        </div>
+
+
+    </main>
+    <!-- end main -->
+
+
+    <!-- footer start -->
+    <footer class="footer">
+
+    </footer>
+    <!-- end footer  -->
+    
+    <!-- 点击导航下拉 -->
+    <script>
+        var nav = document.getElementById("J_nav");
+        var navList = document.getElementById("J_nav_list")
+        nav.onclick = function( ) {
+            navList.classList.toggle("sm-flex");
+        }
+
+
+        // menu-item-title 左侧菜单下拉
+
+        var menuTitles = document.querySelectorAll("#J_menu .menu-item .menu-item-title");
+        var menu=document.getElementById("J_menu");
+        var len=menuTitles.length;
+        for(var i=0; i<len; i++) {
+            menuTitles[i].flag="hidden"
+            menuTitles[i].onclick=function(){
+                if(this.flag==="hidden"){
+                    this.classList.add("menu-item-active");
+                var h=this.nextElementSibling.clientHeight;
+
+                this.parentNode.style.height=h+40+"px";
+                    // 缩小情况下点击
+                    menu.style.width="260px";
+                this.flag="show";
+                }else{
+                    this.classList.remove("menu-item-active");
+                    this.parentNode.style.height="40px";
+                    this.flag="hidden"
+                }
+                
+            }
+        }
+
+
+          // menu-button - open/close
+        var onOff=document.getElementById("button");
+        onOff.onclick=function(){
+                var w=menu.clientWidth;
+                if(w<100){
+                    // open
+                    menu.style.width="260px";
+                 
+
+
+                }else {
+                    // close
+                    menu.style.width="75px";
+                    for(var i=0; i<len; i++) {
+                        menuTitles[i].classList.remove("menu-item-active");
+                        menuTitles[i].parentNode.style.height="40px";
+                        menuTitles[i].flag="hiddne";
+                    }
+                }
+        }
+
+
+
+
+
+        // hide menu-item-title when screen size < 1400px
+        window.addEventListener("resize" , function(){
+            var w=document.documentElement.clientWidth;
+            if(w>1400){
+                menu.style.width="260px";
+            }
+
+            if(w<=1400){
+                for(var i=0; i<len; i++){
+                    menuTitles[i].parentNode.style.height="40px";
+                    menu.style.width="75px";
+                    menuTitles[i].classList.remove("menu-item-active");
+                    menuTitles[i].flag="hidden";
+                }
+            }
+        })
+
+
+      
+
+
+    </script>
+
+
+
+    
+    <script type="text/javascript">
+
+         // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById("J_chart1"));
+        var myChart2 = echarts.init(document.getElementById("J_chart2"));
+
+
+        // 指定图表的配置项和数据
+        option1 = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    top: '5%',
+    left: 'center'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      itemStyle: {
+        borderRadius: 10,
+        borderColor: '#fff',
+        borderWidth: 2
+      },
+      label: {
+        show: false,
+        position: 'center'
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: '40',
+          fontWeight: 'bold'
+        }
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 1048, name: 'Search Engine' },
+        { value: 735, name: 'Direct' },
+        { value: 580, name: 'Email' },
+        { value: 484, name: 'Union Ads' },
+        { value: 300, name: 'Video Ads' }
+      ]
+    }
+  ]
+};
+
+
+    var option2 = {
+  xAxis: {
+    type: 'category',
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [120, 200, 150, 80, 70, 110, 130],
+      type: 'bar',
+      showBackground: true,
+      backgroundStyle: {
+        color: 'rgba(180, 180, 180, 0.2)'
+      }
+    }
+  ]
+};
+
+
+// 使用刚指定的配置项和数据显示图表
+myChart1.setOption(option1);
+myChart2.setOption(option2);
+
+window.addEventListener("resize",function() {
+    myChart1.resize();
+    myChart2.resize();
+});
+
+    </script>
+
+
+</body>
+</html>
